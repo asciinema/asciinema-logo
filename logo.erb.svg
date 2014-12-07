@@ -6,5 +6,5 @@
     </mask>
   </defs>
   <polygon points="<%= pt(BIG_TRIANGLE_RADIUS, 0) %>, <%= pt(BIG_TRIANGLE_RADIUS, 120) %>, <%= pt(BIG_TRIANGLE_RADIUS, 240) %>" mask="url(#small-triangle-mask)" fill="<%= COLOR %>"></polygon>
-  <polyline points="<%= pt(SMALL_TRIANGLE_RADIUS, 30) %>, <%= pt(SMALL_TRIANGLE_RADIUS, 210) %>" stroke="<%= COLOR %>" stroke-width="100"></polyline>
+  <polyline points="<%= pt(SMALL_TRIANGLE_RADIUS, 30) %>, <%= pt(SMALL_TRIANGLE_RADIUS, 210) %>" stroke="<%= COLOR %>" stroke-width="<%= BAR_WIDTH %>"></polyline>
 </svg>

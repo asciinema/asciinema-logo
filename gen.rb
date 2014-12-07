@@ -8,6 +8,7 @@ BIG_TRIANGLE_HEIGHT = (3 / 2.0) * BIG_TRIANGLE_RADIUS # h = 3/2 * r
 HEIGHT = BIG_TRIANGLE_RADIUS * 3 / Math.sqrt(3) # a = r * 3 / sqrt(3)
 WIDTH = HEIGHT # make it a square
 COLOR = ARGV[0] || "#d40000"
+BAR_WIDTH = 90
 
 def rad(deg)
   deg * Math::PI / 180
