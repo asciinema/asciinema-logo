@@ -42,5 +42,5 @@ def pt(radius, deg)
   point(radius, deg).join(" ")
 end
 
-erb = ERB.new(File.read('logo.erb'))
+erb = ERB.new(File.read('logo.erb.svg'))
 puts erb.result(binding)
