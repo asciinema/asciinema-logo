@@ -3,12 +3,11 @@ build:
 	ruby gen.rb white >logo-white.svg
 
 png:
-	# needs rsvg-convert (brew install librsvg)
-	rsvg-convert -h 512 logo-red.svg >logo-red.png
-	rsvg-convert -h 512 logo-white.svg >logo-white.png
+	magick -density 300 -background none logo-red.svg -resize 512x512 logo-red.png
+	magick -density 300 -background none logo-white.svg -resize 512x512 logo-white.png
 
 favicon:
-	rsvg-convert -h 32 logo-red.svg >favicon.png
+	magick -density 100 -background none logo-red.svg -resize 32x32 favicon.png
 
 watch:
 	fswatch logo.erb gen.rb | xargs -n1 -I{} make build
